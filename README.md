@@ -7,15 +7,22 @@ A collection of some simple windows tools.
 *32.exe are 32 bit.  
 *A32.exe are 32 bit Ansi.  
   
-#### Descriptions 
+#### Overview
 
 Name| Description | Type | Year  
 ------------ | ------------- | -------------  
 getfromclip | Get text-content from clipbard | console app | 2022  
   
-
 #### Download  
 Click on *.exe, then click on "View Raw"!   
+
+#### Descriptions 
+
+##### getfromclip
+Gets text-content from clipboard, for use in batch scripts. 
+
+More to come ...  
+
 
   
 ##### License: MIT  
@@ -32,8 +39,10 @@ Copyright (c) 2022 J. v. Roos
 
 
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1647001985
+[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1647003300
 )  
-[Virusscan at Virustotal, getfromclip2.exe 32bit-exe, Check here]()  
-[Virusscan at Virustotal, getfromclipA32.exe 32bit-exe ANSI, Check here]()  
+[Virusscan at Virustotal, getfromclip2.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/133f34455561ada9796d0cf58d9f54e3c433dafbaee962315cd71028b2f3631c/detection/u-133f34455561ada9796d0cf58d9f54e3c433dafbaee962315cd71028b2f3631c-1647003301
+)  
+[Virusscan at Virustotal, getfromclipA32.exe 32bit-exe ANSI, Check here](https://www.virustotal.com/gui/url/5345a580aa08d8fe72fe7608c5c70ccdda4435cec6543d9ea8a7ee958876806d/detection/u-5345a580aa08d8fe72fe7608c5c70ccdda4435cec6543d9ea8a7ee958876806d-1647003301
+)  
 Use [CTRL] + Click to open in a new window! 
