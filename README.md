@@ -7,14 +7,15 @@ A collection of some simple windows tools.
 *32.exe are 32 bit.  
 *A32.exe are 32 bit Ansi.  
   
-#### Descriptions:  
+#### Descriptions 
 
 Name| Description | Type | Year  
 ------------ | ------------- | -------------  
 getfromclip | Get text-content from clipbard | console app | 2022  
   
 
-
+#### Download
+Click on *.exe, then click on "View Raw" 
 
   
 ##### License: MIT  
