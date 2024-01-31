@@ -5,7 +5,7 @@
  * 
  * uses UTF-8
  * 
- * Version: 0.009
+ * Version: no versioning
  * 
  * Copyright (c) 2024 jvr.de. All rights reserved.
  *
