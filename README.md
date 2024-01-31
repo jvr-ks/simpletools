@@ -137,7 +137,7 @@ Add to the batchfile:
 ````
 start showMessage.exe "TEXT"  
 ````
-Example TEXT: "<Batchfilename> Parameter: %1%"  
+Example TEXT: "Started <Batchfilename> Parameter: %1%"  
   
 "showMessage.exe" must be located in a directory of the Window Path-variable,  
 or use the full pathname.  
@@ -191,6 +191,6 @@ Copyright (c) 2022/23/24 J. v. Roos
 )  
 [Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1706713131
 )  
-[Virusscan at Virustotal, showStarted.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/01d29cd1c13a141e171fee094a021e4f5dec23914f73a15eaef32db2d64c6dd5/detection/u-01d29cd1c13a141e171fee094a021e4f5dec23914f73a15eaef32db2d64c6dd5-1706713148
+[Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1706713505
 )  
 Use [CTRL] + Click to open in a new window! 
