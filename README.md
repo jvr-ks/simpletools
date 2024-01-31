@@ -19,11 +19,14 @@ internalvariables2 | Show AHK internal variables | exe  | 2023
 quicksave | makes a copy of the directory to C:\\_ _ _SAVE| exe (console) | 2022/2023 
 sbt | Just calls sbt.bat | exe (console) | 2022  
 soundplay | plays sound or video, to be used in batch-files | exe (console) | 2022  
-keyremapper | (key remapping) The Win-key fails on my K400 keyboard, using F5 to trigger the Win-key  | exe (persistent) | 2023  
+showMessage | to display a message, if a batch-file is started minimized | exe | 2024  
+
+~~keyremapper~~
   
 ### Latest changes  
 Name | Modification
 ------------ | -------------  
+showMessage | NEW
 hotkeyConverter2 | NEW
 cmdprompt | removal of the temporary file "cd.tmp" sometimes failed (fixed)
 quicksave | sets destination folder timestamp to current time, \*.lnk-files and junctions are not copied!
@@ -129,10 +132,18 @@ soundplay[.exe] [<soundfile.wav>] [<duration milliseconds>]
 ````  
 Other soundfile-formats support depends on the installed codecs (mp3 etc.).  
   
-#### keyremapper  
-The Win-key fails on my K400 keyboard, using F5 to push the Win-key (hold it down for 3 seconds)
+#### showMessage  
+Add to the batchfile:  
+````
+start showMessage.exe "TEXT"  
+````
+Example TEXT: "<Batchfilename> Parameter: %1%"  
   
+"showMessage.exe" must be located in a directory of the Window Path-variable,  
+or use the full pathname.  
   
+Hint: Create a link-file of the batchfile to start minimized,  
+besides all Desktop Icons are already link-files.  
   
 **More to come ...**  
   
@@ -164,20 +175,22 @@ Copyright (c) 2022/23/24 J. v. Roos
 
 
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1706702310
+[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1706713020
 )  
-[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1706702315
+[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1706713035
 )  
-[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1706702318
+[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1706713052
 )  
-[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1706702319
+[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1706713067
 )  
-[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1706702556
+[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1706713083
 )  
-[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1706702572
+[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1706713100
 )  
-[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1706702588
+[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1706713115
 )  
-[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1706702604
+[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1706713131
+)  
+[Virusscan at Virustotal, showStarted.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/01d29cd1c13a141e171fee094a021e4f5dec23914f73a15eaef32db2d64c6dd5/detection/u-01d29cd1c13a141e171fee094a021e4f5dec23914f73a15eaef32db2d64c6dd5-1706713148
 )  
 Use [CTRL] + Click to open in a new window! 

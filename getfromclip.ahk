@@ -9,7 +9,7 @@
  * 
  * Copyright (c) 2022 jvr.de. All rights reserved.
  *
- * Licens -> Licenses.txt
+ * Licens -> license.txt
  * 
  *********************************************************************************
 */
