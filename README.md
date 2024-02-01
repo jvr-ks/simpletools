@@ -152,25 +152,16 @@ besides all Desktop Icons are already link-files.
   
 **More to come ...**  
   
-  
-#### License: MIT  
-Permission is hereby granted, free of charge,  
-to any person obtaining a copy of this software and associated documentation files (the "Software"),  
-to deal in the Software without restriction,  
-including without limitation the rights to use,  
-copy, modify, merge, publish, distribute, sub license, and/or sell copies of the Software,  
-and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  
-  
-The above copyright notice and this permission notice shall be included in all copies  
-or substantial portions of the Software.  
-  
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,  
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,  
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,  
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE  
-OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
+
+/*
+ *********************************************************************************
+ * 
+ * GNU GENERAL PUBLIC LICENSE
+ * 
+ * A copy is included in the file "license.txt"
+ *
+  *********************************************************************************
+*/
 
 Copyright (c) 2022/23/24 J. v. Roos  
 
@@ -180,22 +171,22 @@ Copyright (c) 2022/23/24 J. v. Roos
 
 
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1706808309
+[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1706810051
 )  
-[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1706808325
+[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1706810068
 )  
-[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1706808341
+[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1706810083
 )  
-[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1706808356
+[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1706810100
 )  
-[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1706808373
+[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1706810117
 )  
-[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1706808390
+[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1706810133
 )  
-[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1706808405
+[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1706810149
 )  
-[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1706808422
+[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1706810165
 )  
-[Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1706808439
+[Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1706810181
 )  
 Use [CTRL] + Click to open in a new window! 
