@@ -2,7 +2,15 @@
 ; https://www.autohotkey.com/docs/v2/Variables.htm#BuiltIn
 ; C:\___x2_wrk\_autohotkey\simpletools\internalvariables2.ahk
 
-
+/*
+ *********************************************************************************
+ * 
+ * GNU GENERAL PUBLIC LICENSE
+ * 
+ * A copy is included in the file "license.txt"
+ *
+  *********************************************************************************
+*/
 ; UNDER CONSTRUCTION!
 
 ; AHK 2

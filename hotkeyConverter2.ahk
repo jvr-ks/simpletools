@@ -30,7 +30,13 @@
 
 textBackIn := ""
 textBackOut := ""
+noMd := 0
 
+Loop A_Args.Length
+{
+  if(InStr(A_Args[A_index],"nomd"))
+    noMd := 1
+}
 
 hotkeyConverter()
 
@@ -89,9 +95,8 @@ codeToText(*) {
   
   theText := ""
   toParse := textBackIn.Value
-  ; ¡	¢	£	¤	¥	¦	§	¨	©	ª	«	¬	­	®
 
-  c := 0x00A1 ; INVERTED EXCLAMATION MARK
+  c := 0x00A1 ; using unused characters as "special strings" placeholders
   toParse := RegExReplace(toParse, "i)F12",Chr(c),&rest,1,1)
   c += 1
   toParse := RegExReplace(toParse, "i)F11",Chr(c),&rest,1,1)
@@ -138,103 +143,106 @@ codeToText(*) {
   c += 1
   toParse := RegExReplace(toParse, "i)Pause",Chr(c),&rest,1,1) ; 0x00B7
 
-
-
+  openBracket := "\["
+  closeBracket := "]"
+  
+  if (noMd)
+    openBracket := "["
+  
+  
   Loop Parse, toParse, "", "`n`r"
   {
     switch A_LoopField
     {
       case "+": 
-        theText .= "[SHIFT]" . " + "
+        theText .= openBracket . "SHIFT" . closeBracket . " + "
         
       case "^": 
-        theText .= "[CTRL]" . " + "
+        theText .= openBracket . "CTRL" . closeBracket . " + "
         
       case "!": 
-        theText .= "[ALT]" . " + "
+        theText .= openBracket . "ALT" . closeBracket . " + "
         
       case "#": 
-        theText .= "[WIN]" . " + "
+        theText .= openBracket . "WIN" . closeBracket . " + "
         
       case " ": 
         theText .= " "
       
       case Chr(0x00A1): 
-        theText .= "[F12]" . " + "
+        theText .= openBracket . "F12" . closeBracket . " + "
         
       case Chr(0x00A2): 
-        theText .= "[F11]" . " + "
+        theText .= openBracket . "F11" . closeBracket . " + "
         
       case Chr(0x00A3): 
-        theText .= "[F10]" . " + "
+        theText .= openBracket . "F10" . closeBracket . " + "
         
       case Chr(0x00A4): 
-        theText .= "[F9]" . " + "
+        theText .= openBracket . "F9" . closeBracket . " + "
 
       case Chr(0x00A5): 
-        theText .= "[F8]" . " + " 
+        theText .= openBracket . "F8" . closeBracket . " + " 
 
       case Chr(0x00A6): 
-        theText .= "[F7]" . " + " 
+        theText .= openBracket . "F7" . closeBracket . " + " 
 
       case Chr(0x00A7): 
-        theText .= "[F6]" . " + "        
+        theText .= openBracket . "F6" . closeBracket . " + "        
         
       case Chr(0x00A8): 
-        theText .= "[F5]" . " + "    
+        theText .= openBracket . "F5" . closeBracket . " + "    
         
       case Chr(0x00A9): 
-        theText .= "[F4]" . " + "  
+        theText .= openBracket . "F4" . closeBracket . " + "  
         
       case Chr(0x00AA): 
-        theText .= "[F3]" . " + "        
+        theText .= openBracket . "F3" . closeBracket . " + "        
         
       case Chr(0x00AB): 
-        theText .= "[F2]" . " + "        
+        theText .= openBracket . "F2" . closeBracket . " + "        
         
       case Chr(0x00AC): 
-        theText .= "[F1]" . " + "
+        theText .= openBracket . "F1" . closeBracket . " + "
         
       case Chr(0x00AC): 
-        theText .= "[F1]" . " + "
+        theText .= openBracket . "F1" . closeBracket . " + "
 
       case Chr(0x00AD): 
-        theText .= "[Home]" . " + "
+        theText .= openBracket . "Home" . closeBracket . " + "
 
       case Chr(0x00AE): 
-        theText .= "[End]" . " + "
+        theText .= openBracket . "End" . closeBracket . " + "
 
       case Chr(0x00AF): 
-        theText .= "[PgUp]" . " + "
+        theText .= openBracket . "PgUp" . closeBracket . " + "
 
       case Chr(0x00B0): 
-        theText .= "[PgDn]" . " + "
+        theText .= openBracket . "PgDn" . closeBracket . " + "
 
       case Chr(0x00B1): 
-        theText .= "[Pause]" . " + "
+        theText .= openBracket . "Pause" . closeBracket . " + "
 
       case Chr(0x00B2): 
-        theText .= "[CapsLock]" . " + "
+        theText .= openBracket . "CapsLock" . closeBracket . " + "
 
       case Chr(0x00B3): 
-        theText .= "[Up]" . " + "
+        theText .= openBracket . "Up" . closeBracket . " + "
 
       case Chr(0x00B4): 
-        theText .= "[Down]" . " + "
+        theText .= openBracket . "Down" . closeBracket . " + "
 
       case Chr(0x00B5): 
-        theText .= "[Left]" . " + "
+        theText .= openBracket . "Left" . closeBracket . " + "
 
       case Chr(0x00B6): 
-        theText .= "[Right]" . " + "
+        theText .= openBracket . "Right" . closeBracket . " + "
         
       case Chr(0x00B7): 
-        theText .= "[Pause]" . " + "
+        theText .= openBracket . "Pause" . closeBracket . " + "
 
-
-      
       default:
-        theText .= "[" . A_LoopField . "]"
+        theText .= openBracket . "" . A_LoopField . "" . closeBracket
     }
   }
   ; StringCaseSense, Off

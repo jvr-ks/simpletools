@@ -9,11 +9,18 @@
  *
  * Copyright (c) 2021 jvr.de. All rights reserved.
  *
- * Licens -> license.txt
  *
  *********************************************************************************
 */
-
+/*
+ *********************************************************************************
+ * 
+ * GNU GENERAL PUBLIC LICENSE
+ * 
+ * A copy is included in the file "license.txt"
+ *
+  *********************************************************************************
+*/
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ; Enable warnings to assist with detecting common errors.
 #SingleInstance force
