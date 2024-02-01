@@ -246,7 +246,9 @@ codeToText(*) {
     }
   }
   ; StringCaseSense, Off
-  ;theText := SubStr(theText, 1, -3)
+  if (SubStr(theText, -3, 3) == " + ")
+    theText := SubStr(theText, 1, -3)
+  
   textBackOut.Value := theText
   
   textBackOut.Focus()
