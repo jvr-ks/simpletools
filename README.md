@@ -1,5 +1,5 @@
 # SimpleTools
-Windows > 10 64bit only!  
+Windows &gt; 10 64bit only!  
   
 A collection of some simple windows tools.  
 (Autohotkey scripts)  
@@ -82,9 +82,9 @@ call getfromclip | %comspec%
 
 #### quicksave
 Makes a copy (a snapshot) (using [robocopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)) of the directory (with name: directoryname) containing "quicksave.exe" to:  
-"C:\___SAVE\<directoryname>_TIMESTAMP" 
+"C:\___SAVE\&lt;directoryname&gt;_TIMESTAMP" 
 where TIMESTAMP is year, month, day, hour, minute, second and    
-<directoryname> is the last part of the path (i.e. the subdirectory-name).  
+&lt;directoryname&gt; is the last part of the path (i.e. the subdirectory-name).  
 If not using distinct (sub-)directorynames, it is more difficult the select the correct folder in case of a restore.  
 Robocopy parameter used are: " /MIR /XO /TEE /FFT /W:1 /R:2 /NP" (hardcoded, not changable),  
 automatically excluded directories are: "tmp" "target" "streams" ".git"  
@@ -128,7 +128,7 @@ sbt.exe just calls "sbt.bat"
 #### soundplay  
 I use it to signal the end of long running operations, i.e. backup etc.,  
 ````
-soundplay[.exe] [<soundfile.wav>] [<duration milliseconds>]  
+soundplay[.exe] [&lt;soundfile.wav&gt;] [&lt;duration milliseconds&gt;]  
 ````  
 Other soundfile-formats support depends on the installed codecs (mp3 etc.).  
   
@@ -142,7 +142,7 @@ Add to the batchfile:
 ````
 start showMessage.exe "TEXT"  
 ````
-Example TEXT: "Started <Batchfilename> Parameter: %1%"  
+Example TEXT: "Started &lt;Batchfilename&gt; Parameter: %1%"  
   
 "showMessage.exe" must be located in a directory of the Window Path-variable,  
 or use the full pathname.  
@@ -171,22 +171,22 @@ Copyright (c) 2022/23/24 J. v. Roos
 
 
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1706811364
+[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1706976058
 )  
-[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1706811381
+[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1706976073
 )  
-[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1706811397
+[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1706976089
 )  
-[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1706811413
+[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1706976105
 )  
-[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1706811431
+[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1706976121
 )  
-[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1706811448
+[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1706976137
 )  
-[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1706811465
+[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1706976153
 )  
-[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1706811482
+[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1706976169
 )  
-[Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1706811498
+[Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1706976185
 )  
 Use [CTRL] + Click to open in a new window! 

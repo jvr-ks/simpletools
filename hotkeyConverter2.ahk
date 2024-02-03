@@ -87,7 +87,7 @@ printHotkey(*) {
   
   return
 }
-;-------------------------------- pressHotkey --------------------------------
+;-------------------------------- codeToText --------------------------------
 codeToText(*) {
   global textBackIn, textBackOut
   
