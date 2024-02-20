@@ -32,12 +32,12 @@
 
 textBackIn := ""
 textBackOut := ""
-noMd := 0
+useMarkdown := 1
 
 Loop A_Args.Length
 {
   if(InStr(A_Args[A_index],"nomd"))
-    noMd := 1
+    useMarkdown := 0
 }
 
 hotkeyConverter()
@@ -91,11 +91,11 @@ printHotkey(*) {
 }
 ;------------------------------ lSuBcodeToText ------------------------------
 lSuBcodeToText(*){
-  global textBackIn, textBackOut
+  global textBackIn, textBackOut, useMarkdown
   
   oSaved := hcGui.Submit("0")
   
-  theText := codeToText(textBackIn.Value, 1)
+  theText := codeToText(textBackIn.Value, useMarkdown)
   
   textBackOut.Value := theText
   
