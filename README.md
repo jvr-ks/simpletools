@@ -15,15 +15,13 @@ Name | Description | Type | Year of creation
 clipboardToConsole  | Copies text-content from clipbard to the console | shell | 2024
 clsid | Windows Class Identifiers tryout | gui | 2023
 cmdprompt  | Opens a command prompt (current directory!) | shell | 2023
-getfromclip | Get text-content from clipbard | exe (console) | 2022  
+~~getfromclip~~ | Get text-content from clipbard | exe (console) | 2022 deprecated   
 hotkeyConverter2 | Convert Hotkeys | exe  | 2024  
 internalvariables2 | Show AHK internal variables | exe  | 2023  
 quicksave | makes a copy of the directory to C:\\_ _ _SAVE| exe (console) | 2022/2023 
 sbt | Just calls sbt.bat | exe (console) | 2022  
 soundplay | plays sound or video, to be used in batch-files | exe (console) | 2022  
 showMessage | to display a message, if a batch-file is started minimized | exe | 2024  
-
-~~keyremapper~~
   
 ### Latest changes  
 Name | Modification
@@ -39,6 +37,17 @@ quicksave | ok-request removed
 quicksave | file "quicksaveCreatelink.bat" is removed after execution (6 seconds delayed)
   
 ### Download  
+[clipboardToConsole.exe](https://github.com/jvr-ks/simpletools/raw/main/clipboardToConsole.exe)  
+[clsid](https://github.com/jvr-ks/simpletools/raw/main/clsid)  
+[cmdprompt](https://github.com/jvr-ks/simpletools/raw/main/cmdprompt)  
+[~~getfromclip~~](https://github.com/jvr-ks/simpletools/raw/main/getfromclip)  
+[hotkeyConverter2](https://github.com/jvr-ks/simpletools/raw/main/hotkeyConverter2)  
+[internalvariables2](https://github.com/jvr-ks/simpletools/raw/main/internalvariables2)  
+[quicksave](https://github.com/jvr-ks/simpletools/raw/main/quicksave)  
+[sbt](https://github.com/jvr-ks/simpletools/raw/main/sbt)  
+[soundplay](https://github.com/jvr-ks/simpletools/raw/main/soundplay)  
+[showMessage](https://github.com/jvr-ks/simpletools/raw/main/showMessage)  
+or  
 Click on *.exe, then click on "View Raw"!   
   
 ### Descriptions  
@@ -196,5 +205,7 @@ Copyright (c) 2022/23/24 J. v. Roos
 [Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1708426002
 )  
 [Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1708426018
+)  
+[Virusscan at Virustotal, clipboardToConsole.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150/detection/u-41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150-1708426895
 )  
 Use [CTRL] + Click to open in a new window! 
