@@ -3,7 +3,7 @@
 #SingleInstance
 #Warn
 
-tooltip, AhkVersion: %A_AhkVersion%
+msgbox, AhkVersion: %A_AhkVersion%
 
 sleep, 4000
 
