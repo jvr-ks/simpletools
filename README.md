@@ -15,14 +15,14 @@ Name | Version | Description | Type | AHK | Year of creation
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------  
 <a href="#AutohotkeyHelp2">AutohotkeyHelp2</a> | 0.50 | Shows Autohotkey help (the word the cursor is inside or the marked word(s))  | exe| 2 | 2024 
 AhkVersionInfo | 1.00 | Shows installed Autohotkey 1 and 2 version numbers [Download AhkVersionInfo.exe](https://github.com/jvr-ks/simpletools/raw/main/AhkVersionInfo.exe)  | exe| 2 | 2024
-<a href="#chunkCopy">chunkCopy</a>  | moved | Helper to copy large backupfiles in chunks to the cloud  | exe| 2 | 2024  
+[chunkCopy](https://github.com/jvr-ks/chunkCopy) | external | Helper to copy large backupfiles in chunks to the cloud  | exe| 2 | 2024  
 <a href="#clipboardToConsole">clipboardToConsole</a> | -  | Copies text-content from clipboard to the console | console| 2 | 2024  
 <a href="#clsidwin10">clsidwin10</a> | 1.00 | Windows Class Identifiers tryout | gui| 2 | 2023  
 <a href="#cmdprompt">cmdprompt</a> | 1.00 | Opens a command prompt (current directory!) | console| 1 | 2023  
 ~~getfromclip~~ | 1.00 | Get text-content from clipboard | console| 1 | 2022 deprecated  
 <a href="#hotkeyConverter2">hotkeyConverter2</a> | 1.00 | Convert Hotkeys | exe | 2 | 2024  
 <a href="#internalvariables2">internalvariables2</a> | 1.00 | Shows AHK2 internal variables | exe | 2 | 2023  
-<a href="#pwEnterService">pwEnterService</a> | moved | Automatic fills in the Firefox (an other apps) main password | exe| 2 | 2024  
+[pwEnterService](https://github.com/jvr-ks/pwEnterService) | external | Automatic fills in the Firefox (an other apps) main password | exe| 2 | 2024  
 <a href="#quicksave">quicksave</a> | 1.00 | makes a copy of the current directory to C:\\_ _ _SAVE| console| 1 | 2022/2023  
 <a href="#sbt">sbt</a> | 1.00 | Just calls sbt.bat | console| 1 | 2022  
 <a href="#showMessage">showMessage</a> | 1.00 | to display a message, if a batch-file is started minimized | exe| 1 | 2024  
@@ -64,9 +64,6 @@ Based on https://www.autohotkey.com/docs/v2/scripts/
   
 [Download AutohotkeyHelp2.exe](https://github.com/jvr-ks/simpletools/raw/main/AutohotkeyHelp2.exe)  
   
-#### <a name="chunkCopy">chunkCopy</a><a href="#overview"> &uarr;</a>  
-Move to a project of its own! [chunkCopy](https://github.com/jvr-ks/chunkCopy)
-  
 #### <a name="clsidwin10">clsidwin10</a><a href="#overview"> &uarr;</a>
 List of Windows (10) clsids.  
 Click an entry to execute.  
@@ -104,9 +101,6 @@ Shows AHK2 internal variables, i.e. "A_XY" etc. ...
 
 [Download internalvariables2.exe](https://github.com/jvr-ks/simpletools/raw/main/internalvariables2.exe)  
   
-#### <a name="pwEnterService">pwEnterService</a><a href="#overview"> &uarr;</a>  
-Move to a project of its own! [pwEnterService](https://github.com/jvr-ks/pwEnterService)
-
 #### <a name="quicksave">quicksave</a><a href="#overview"> &uarr;</a>
 Makes a copy (a snapshot) (using [robocopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)) of the directory (with name: directoryname) containing "quicksave.exe" to:  
 "C:\___SAVE\&lt;directoryname&gt;_TIMESTAMP" 
