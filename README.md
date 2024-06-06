@@ -33,6 +33,7 @@ AhkVersionInfo | 1.00 | Shows installed Autohotkey 1 and 2 version numbers [Down
 ### Latest changes  
 Name | Modification / Issue
 ------------ | -------------  
+pwEnterService | Move to a project of its own! [pwEnterService](https://github.com/jvr-ks/pwEnterService)
 chunkCopy | Move to a project of its own! [chunkCopy](https://github.com/jvr-ks/chunkCopy)
 translateViaGoogle2 | text selection mechanism changed
   
@@ -103,135 +104,9 @@ Shows AHK2 internal variables, i.e. "A_XY" etc. ...
 
 [Download internalvariables2.exe](https://github.com/jvr-ks/simpletools/raw/main/internalvariables2.exe)  
   
-
 #### <a name="pwEnterService">pwEnterService</a><a href="#overview"> &uarr;</a>  
-Status: BETA test  
-  
-"pwEnterService.exe" stays in memory after once started (i.e. like a service).  
-If it detects one of the defined apps it looks for an open password request.  
-If a request window is found, it enters the defined password automatically, which is very comfortable!    
-  
-Currently supported apps:  
-* "Firefox"  
-* "Crypditor"
-* more to come
+Move to a project of its own! [pwEnterService](https://github.com/jvr-ks/pwEnterService)
 
-##### Setup  
-* Copy to an USB stick (or a directory on an USB stick) the files:
-* * "pwEnterService.exe",  
-* * "pwEnterServiceRemove.exe" (recommended, but a start modifier key can be used instead, look at the section below),  
-* * "pwEnterServiceSettings.exe" (recommended, but a start modifier key can be used instead, look at the section below),  
-  
-* Start "pwEnterService.exe" **while holding down the "Shift key"** to open the settings window \*1),  
-  The configuration files are created, if the settings window is closed.  
-  "pwEnterServicePasswords.ini" contains the passwords and the name of the crypditor exe-file,  
-  "pwEnterServiceConfig.ini" contains all other app configuration parameters.  
-* Enter your password(s) into the Box(es):  
-* * "Firefox": enter your password in the field "Firefox_Password"=&lt;PASSWORD&gt;  
-* * "Crypditor": 
-* * * enter your password in the field "Crypditor_Password"=&lt;PASSWORD&gt; 
-* * * enter the name of the Crypditor executable file in the field "Crypditor_ExeName"=&lt;EXENAME&gt;
-* Close the window, the file "pwEnterServicePasswords.ini" is created.  
-If no password is entered, the corresponding app will be ignored!  
-
-\*1) Start "pwEnterServiceSettings.exe" opens the settings window also,  
-but passwords are hidden then (if the Shift key is not pressed ...).  
-  
-The file "pwEnterServicePasswords.ini" and can be manually edited with windows notepad also.  
-The passwords are NOT encrypted!  
-  
-* **If you leave your desk, shutdown your computer or close all running apps which require a password!** 
-* **Do not forget to take the stick with you!**
-  
-Start "pwEnterServiceRemove.exe" to remove "pwEnterService.exe" from memory  
-in case of: 
-* Any manually configuration (password) change,  
-* To allow an update of a running "pwEnterService.exe"
-
-##### Start modifier keys  
-key(s) | Operation | Remarks  
------------- | ------------- | -------------  
-Shift | Open the Settings Window | Alternative to running "pwEnterServiceSettings.exe"  
-Alt | Remove pwEnterService | Alternative "pwEnterServiceRemove.exe" but "pwEnterServiceRemove.exe" is more reliable!  
-Shift + Alt | Start in Test mode | The app window stays viewable with some additional information  
-  
-##### Start with Windows  
-Windows randomly mixes the driveletters of removable storage devices.  
-To assign a fixed driveletter to the USB stick containing the file "pwEnterServicePasswords.ini"  
-I use [USBDLM - USB Drive Letter Manager for Windows] (https://www.uwe-sieber.de/usbdlm_e.html) 
-which is Freeware for private and educational use.  
-  
-##### Move the "pwEnterService.exe" to a harddisk  
-If "Start with Windows" is used, the USB stick must already be pluged in if Windows is booted,  
-otherwise "pwEnterService.exe" must be manually started once, if the password is requested.  
-  
-To just keep the "pwEnterServicePasswords.ini" file on the USB stick create a directory of your choice \*2) (example: "C:\jvrde\keypass") on your harddisk and copy (or move) the files:    
-* * "pwEnterService.exe",  
-* * "pwEnterServiceSettings.exe" \*3),  
-* * "pwEnterServiceRemove.exe \*3),  
-to the just created directory.  
-Use [startDelayed](https://github.com/jvr-ks/startDelayed) or  
-create a link of "pwEnterService.exe" inside an Windows Autostart Folder (run "shell:startup")  
-to start pwEnterService with Windows.  
-  
-\*2) NOT inside a protected directory like "C:\Program Files" or "C:\Program Files (x86)".  
-\*3) recommended, but a start modifier key can be used instead, look at the section below,  
-     the tray menu has an "Exit" entry also!   
-
-Start "pwEnterServiceSettings.exe" and enter the path to file "pwEnterServicePasswords.ini" on the USB stick,  
-example (if the location of the file is "H:\keypass\pwEnterServicePasswords.ini"):  
-remotePasswordsPath=H:\keypass  
-  
-##### Hints  
-* Calling "pwEnterService.exe remove" is possible but not very reliable, use "pwEnterServiceRemove.exe" instead.  
-* "pwEnterService.exe settings" opens the password edit window too.  
-* If the app is running in the background, there is an invisble (100% transparent) line (height: 1px) at the top/center of the screen.  
-* **You may pin the app to the taskbar, if the settings dialog is currently shown!**  
-* Activate "Testmode": Hold down "Alt" key while starting the app or change in the Configuration file "Testmode=1".  
-* If you started multiple apps concurrently, you have to manually refocus the password request boxes!    
-  
-##### Tray menu  
-The tray menu has a few default entries i.e. "Suspend Hotkeys", "Pause Script" and "Exit".  
-Additional entries are:  
-* "Open Github webpage",  
-* More to come ...
-
-#### Configuration file  
-(**Changed from version >= 0.012**)  
-
-The "standard location" of the Configuration file is:  
-C:\\ProgramData\\pwenterservice\\pwenterservice_&lt;COMPUTER_NAME&gt;.ini  
-  
-To be portable, a copy of this Configuration file \*1) is always written to the app directory.
-  
-If no Configuration file is found in the "standard location" folder,  
-but there is one in the app directory, this one is copied to the "standard location" directory.  
-Both files are always synchronously updated then!  
-
-If neither file is found, default values are used and both Configuration files are created,  
-but only if the settings menu is opened once.  
-  
-\*1) If a file "_pwenterservice.ini" is found in the app directory,  
-it is used instead of "pwenterservice.ini". 
-
-##### Latest changes:  
-Version (&gt;=)| Change  
------------- | -------------  
-0.14 | Bugfixes
-0.12 | Status: BETA test
-0.09 | Configuration splitted up into two files: "pwEnterServicePasswords.ini" and "pwEnterServiceConfig.ini"
-0.07 | Testmode added
-0.03 | If the app is started while a password request is already open, the password is entered also, pwEnterServiceSettings changed  
-
-##### Known issues / bugs  
-Issue / Bug | Type | fixed in version  
------------- | ------------- | -------------  
-Sometimes pwEnterService fails | issue | 0.06
-  
-[Download pwEnterService.exe](https://github.com/jvr-ks/simpletools/raw/main/pwEnterService.exe)  
-[Download pwEnterServiceRemove.exe](https://github.com/jvr-ks/simpletools/raw/main/pwEnterServiceRemove.exe)  
-[Download pwEnterServiceSettings.exe](https://github.com/jvr-ks/simpletools/raw/main/pwEnterServiceSettings.exe) 
-  
 #### <a name="quicksave">quicksave</a><a href="#overview"> &uarr;</a>
 Makes a copy (a snapshot) (using [robocopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)) of the directory (with name: directoryname) containing "quicksave.exe" to:  
 "C:\___SAVE\&lt;directoryname&gt;_TIMESTAMP" 
@@ -339,7 +214,6 @@ Virustotal virusscan results, please use [CTRL] + Click to open in a new window!
 
 [Virusscan at Virustotal, AhkVersionInfo.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/35e1d501284bf5cf750976da4ad3a82e39fc797dd257477e46484a9a8ca6d4ba/detection/u-35e1d501284bf5cf750976da4ad3a82e39fc797dd257477e46484a9a8ca6d4ba-1716023368)  
 [Virusscan at Virustotal, AutohotkeyHelp2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/cd88a87c618d6c76bb885d99edcc8b6a339ea7f20dcb3715c9f31924cc7eff32/detection/u-cd88a87c618d6c76bb885d99edcc8b6a339ea7f20dcb3715c9f31924cc7eff32-1716801439)  
-[Virusscan at Virustotal, chunkCopy.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/2905ae18866b7f67d6c765ed575cc21d38817982f49a1f69212b12dbaef31a1e/detection/u-2905ae18866b7f67d6c765ed575cc21d38817982f49a1f69212b12dbaef31a1e-1717089798)  
 [Virusscan at Virustotal, clipboardToConsole.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150/detection/u-41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150-1714330637)  
 [Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1714330804)  
 [Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1714330823)  
@@ -349,7 +223,6 @@ Virustotal virusscan results, please use [CTRL] + Click to open in a new window!
 [Virusscan at Virustotal, passwordEN2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/e797b409c0685aac447283e524c48007445fbc3000d93f8c06a060d251d58028/detection/u-e797b409c0685aac447283e524c48007445fbc3000d93f8c06a060d251d58028-1713959496)  
 [Virusscan at Virustotal, passwordFF2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/d58df15c453f3f73341e693d06d05a9f80e26916aa67aa64e5da26cbb97b0d90/detection/u-d58df15c453f3f73341e693d06d05a9f80e26916aa67aa64e5da26cbb97b0d90-1713787212)  
 [Virusscan at Virustotal, pwEnter.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/19bec3f503f4454554bb85e92c57b658d2bab09367398d5e4f83b22a8e35f0a9/detection/u-19bec3f503f4454554bb85e92c57b658d2bab09367398d5e4f83b22a8e35f0a9-1714330897)  
-[Virusscan at Virustotal, pwEnterService.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/8a2db7ace16a4fb3bb5d0b02beb69965f9e7a38d6db25244f1b317b6749998b3/detection/u-8a2db7ace16a4fb3bb5d0b02beb69965f9e7a38d6db25244f1b317b6749998b3-1716640766)  
 [Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1714330915)  
 [Virusscan at Virustotal, sbt.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1714330933)  
 [Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1714330951)  
