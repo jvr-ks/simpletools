@@ -37,11 +37,13 @@ outputFileName := "_virusscanLinks.txt"
 virusscanResults := Map()
 
 Loop read, inputFileName {
-    line := StrSplit(A_LoopReadLine, ",")
-    if (virusscanResults.Has(line[1]))
-      virusscanResults.Delete(line[1])
-    
-    virusscanResults.Set(line[1], line[2])
+    if (StrLen(A_LoopReadLine) > 10){
+      line := StrSplit(A_LoopReadLine, ",")
+      if (virusscanResults.Has(line[1]))
+        virusscanResults.Delete(line[1])
+      
+      virusscanResults.Set(line[1], line[2])
+    }
 }
 
 output := ""

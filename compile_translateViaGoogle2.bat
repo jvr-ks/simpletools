@@ -18,7 +18,8 @@ call python _hidden\_virusscanSimpletools.py %appname% >> _virusscanresults.txt
 if not [%1] == bulkVirusScan (
   call virusScanCreateLinks.exe
   call virusScanLinksCopyToReadme.bat
-) else (
-  timeout /T 15
+
 )
+
+copy /y %appname%.ahk C:\___x2_wrk\_autohotkey\___allapps\apps2\*.*
 

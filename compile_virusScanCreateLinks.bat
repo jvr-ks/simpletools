@@ -10,5 +10,5 @@ call "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in %appname%.ahk /out %
 
 call upx --best %appname%.exe
 
-
+copy /y %appname%.ahk C:\___x2_wrk\_autohotkey\___allapps\apps2\*.*
 
