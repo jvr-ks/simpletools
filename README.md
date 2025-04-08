@@ -15,7 +15,7 @@ Name | Version | Description | Type | AHK | Year of creation
 AhkVersionInfo | 1.00 | Shows installed Autohotkey 1 and 2 version numbers [Download AhkVersionInfo.exe] (https://github.com/jvr-ks/simpletools/raw/main/AhkVersionInfo.exe)  | exe| 2 | 2024  
 [chunkCopy](https://github.com/jvr-ks/chunkCopy) | external | Helper to copy large backupfiles in chunks to the cloud  | exe| 2 | 2024  
 <a href="#clipboardToConsole">clipboardToConsole</a> | -  | Copies text-content from clipboard to the console | console| 2 | 2024  
-<a href="#clipToKeys ">clipToKeys </a> | 1.0  | Shift + Right-click: Insert Clipboardcontent as keysstrokes | exe| 2 | 2025  
+<a href="#clipToKeys">clipToKeys </a> | 1.0  | Shift + Right-click: Insert Clipboardcontent as keysstrokes | exe| 2 | 2025  
 <a href="#clsidwin10">clsidwin10</a> | 1.00 | Windows Class Identifiers tryout | gui| 2 | 2023  
 <a href="#cmdprompt">cmdprompt</a> | 1.00 | Opens a command prompt (current directory!) | console| 1 | 2023  
 ~~getfromclip~~ | 1.00 | Get text-content from clipboard | console| 1 | 2022 deprecated  
