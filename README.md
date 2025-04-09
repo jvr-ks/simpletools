@@ -15,7 +15,7 @@ Name | Version | Description | Type | AHK | Year of creation
 AhkVersionInfo | 1.00 | Shows installed Autohotkey 1 and 2 version numbers [Download AhkVersionInfo.exe] (https://github.com/jvr-ks/simpletools/raw/main/AhkVersionInfo.exe)  | exe| 2 | 2024  
 [chunkCopy](https://github.com/jvr-ks/chunkCopy) | external | Helper to copy large backupfiles in chunks to the cloud  | exe| 2 | 2024  
 <a href="#clipboardToConsole">clipboardToConsole</a> | -  | Copies text-content from clipboard to the console | console| 2 | 2024  
-<a href="#clipToKeys">clipToKeys </a> | 1.0  | Shift + Right-click: Insert Clipboardcontent as keysstrokes | exe| 2 | 2025  
+<a href="#clipToKeys">clipToKeys </a> | 1.001  | Shift + Right-click: Insert Clipboardcontent as keysstrokes | exe| 2 | 2025  
 <a href="#clsidwin10">clsidwin10</a> | 1.00 | Windows Class Identifiers tryout | gui| 2 | 2023  
 <a href="#cmdprompt">cmdprompt</a> | 1.00 | Opens a command prompt (current directory!) | console| 1 | 2023  
 ~~getfromclip~~ | 1.00 | Get text-content from clipboard | console| 1 | 2022 deprecated  
@@ -80,6 +80,16 @@ List is "hardcoded".
 #### <a name="clipToKeys">clipToKeys</a><a href="#overview"> &uarr;</a>  
 Could not use the UltraVNC viewer (Windows) to insert text from the Clipboard into the Linux mousepad app.  
 "clipToKeys" inserts the Clipboardcontent as keystrokes via the Shift + Right-click hotkey.  
+  
+The file "clipToKeys_demodataANSI.txt" (ANSI encoded) contains all ANSI characters.  
+The file "clipToKeys_demodataUTF8.txt" (UTF-8 encoded) contains some demo characters.  
+The file "clipToKeys_demodataUTF16.txt" (UTF-16 LE BOM encoded) contains some demo characters.  
+Test-target-files: "clipToKeys_playgroundANSI.txt" etc.  
+  
+Hints: 
+* If using [editorconfig](http://editorconfig.org) editorconfig replaces "TAB" character by spaces,  
+according to the configuration, with CTRL + V it is not like that!  
+* UTF-8/UTF-16: Some additional erroneous characters may be appended after the last line.
   
 [Download clipToKeys.exe](https://github.com/jvr-ks/simpletools/raw/main/clipToKeys.exe)  
   
@@ -215,18 +225,18 @@ Virustotal virusscan results, please use [CTRL] + Click to open in a new window!
 
 
 
-[Virusscan at Virustotal, AhkVersionInfo.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/35e1d501284bf5cf750976da4ad3a82e39fc797dd257477e46484a9a8ca6d4ba/detection/u-35e1d501284bf5cf750976da4ad3a82e39fc797dd257477e46484a9a8ca6d4ba-1744114837)  
-[Virusscan at Virustotal, AutohotkeyHelp2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/cd88a87c618d6c76bb885d99edcc8b6a339ea7f20dcb3715c9f31924cc7eff32/detection/u-cd88a87c618d6c76bb885d99edcc8b6a339ea7f20dcb3715c9f31924cc7eff32-1744114823)  
-[Virusscan at Virustotal, clipToKeys.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/cbc58b8c931c1d5f7fd4b79648a9f73ba4e8baa6973112b943f90d34dcb7f954/detection/u-cbc58b8c931c1d5f7fd4b79648a9f73ba4e8baa6973112b943f90d34dcb7f954-1744114913)  
-[Virusscan at Virustotal, clipboardToConsole.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150/detection/u-41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150-1744114859)  
-[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1744114965)  
-[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1744115017)  
-[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1744115068)  
-[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1744115120)  
-[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1744115172)  
-[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1744115268)  
-[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1744115319)  
-[Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1744115370)  
-[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1744115421)  
-[Virusscan at Virustotal, translateViaGoogle2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/ca6a814e935c0c5d56443d7da74ee2abcf42f97e59919e3c9f86c09624335944/detection/u-ca6a814e935c0c5d56443d7da74ee2abcf42f97e59919e3c9f86c09624335944-1744115472)  
-[Virusscan at Virustotal, volume2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/9906645597895a8deba575ee56b762554925cc546f89a6333843f8cb5d1d491d/detection/u-9906645597895a8deba575ee56b762554925cc546f89a6333843f8cb5d1d491d-1744115524)  
+[Virusscan at Virustotal, AhkVersionInfo.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/35e1d501284bf5cf750976da4ad3a82e39fc797dd257477e46484a9a8ca6d4ba/detection/u-35e1d501284bf5cf750976da4ad3a82e39fc797dd257477e46484a9a8ca6d4ba-1744196391)  
+[Virusscan at Virustotal, AutohotkeyHelp2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/cd88a87c618d6c76bb885d99edcc8b6a339ea7f20dcb3715c9f31924cc7eff32/detection/u-cd88a87c618d6c76bb885d99edcc8b6a339ea7f20dcb3715c9f31924cc7eff32-1744196380)  
+[Virusscan at Virustotal, clipToKeys.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/cbc58b8c931c1d5f7fd4b79648a9f73ba4e8baa6973112b943f90d34dcb7f954/detection/u-cbc58b8c931c1d5f7fd4b79648a9f73ba4e8baa6973112b943f90d34dcb7f954-1744196499)  
+[Virusscan at Virustotal, clipboardToConsole.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150/detection/u-41f1138450948a54f8a95709e6866841bef6cdaf768b635614d9b50fb533f150-1744196443)  
+[Virusscan at Virustotal, clsidwin10.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31/detection/u-55c6b3210a7edea5e4941207dabfa8dc31385fd0aafcd7718a18e7e0c93b8a31-1744196551)  
+[Virusscan at Virustotal, cmdprompt.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da/detection/u-de8e8d08260ad184d698d5877c18fddd9500b39492beeeea0732db785dadb2da-1744196603)  
+[Virusscan at Virustotal, getfromclip.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937/detection/u-840545518901c3566fd7913adcbe650c577398480d59faec12b39823820ec937-1744196655)  
+[Virusscan at Virustotal, hotkeyConverter2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40/detection/u-680037c3c62d22d393f96931f9ca39d7173874bd0eb84df7eccb9d05ea23dc40-1744196706)  
+[Virusscan at Virustotal, internalvariables2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e/detection/u-56c0581afeb608cd65378e1d7c615e3b81c5f9dd4085933e49aeeb697a40d90e-1744196757)  
+[Virusscan at Virustotal, quicksave.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160/detection/u-96d29b8ff29df39581415998bcc674bddb33b45b01c4b6e0c7487e0d71abd160-1744196809)  
+[Virusscan at Virustotal, sbt.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9/detection/u-6e68e12d3e3d75ad32260de5a1773c448db2bdcc0aeae92208a63f2548de60e9-1744196860)  
+[Virusscan at Virustotal, showMessage.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80/detection/u-6825725c52043018b67892e27074650266f311c756d0b5c1cf258a70925adb80-1744196911)  
+[Virusscan at Virustotal, soundplay.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d/detection/u-7698dd56516eb44073ea1de7d0acfb71c1eff53b1c4ddaaf6a792408cffd991d-1744196963)  
+[Virusscan at Virustotal, translateViaGoogle2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/ca6a814e935c0c5d56443d7da74ee2abcf42f97e59919e3c9f86c09624335944/detection/u-ca6a814e935c0c5d56443d7da74ee2abcf42f97e59919e3c9f86c09624335944-1744197014)  
+[Virusscan at Virustotal, volume2.exe 64bit-exe, Check here]( https://www.virustotal.com/gui/url/9906645597895a8deba575ee56b762554925cc546f89a6333843f8cb5d1d491d/detection/u-9906645597895a8deba575ee56b762554925cc546f89a6333843f8cb5d1d491d-1744197065)  
