@@ -57,11 +57,6 @@
 
 #Include, Lib\gdipAllpatched.ahk
 
-Loop % A_Args.Length() {
-  if(eq(A_Args[A_index], "remove"))
-    exit()
-}
-
 ;---------------------------------------------------------------
 ; Coordinate mode
 ;--------------------------------------------------------------
@@ -122,6 +117,11 @@ OnClipboardChange("ClipChanged" , -1) ; start monitoring
 
 Hotkey, %ocrHotkey%, ocr, On
 
+Loop % A_Args.Length() {
+  if(eq(A_Args[A_index], "remove"))
+    exit()
+}
+
 if (killswitch){
   msg := "OCR select area started,`nHotkey is: " . hotkeyToText(ocrHotkey) . "`nKillSwitch is [ESCAPE]"
 } else {
@@ -176,6 +176,7 @@ ocr(){
     
   tooltip, %tooltipText%, x1 + 50, y1 - 50, 2
     
+  keywait, y
   settimer, ocrLoop, -10
   
   return
@@ -380,7 +381,8 @@ exit() {
   
   stopGDI()
   
-  Gdip_Shutdown(gdiToken)
+  if (gdiToken != "")
+    Gdip_Shutdown(gdiToken)
   
   sleep, 3000
   
