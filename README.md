@@ -108,15 +108,19 @@ Test-target-files: "clipToKeys_playgroundANSI.txt" etc.
 Use "save to clipboardForce.ini":  
 [Download configuration file clipboardForce.ini](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.ini)  
 
-Uses Tesseract for Windows now, install it from:  
+Uses Tesseract for Windows now, download installer:  
 [Download tesseract v5.0.1.20220118 {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.1.20220118.exe)  
-copy to tesseractPath defined in the configfile "clipboardForce.ini".  
+If not using the default installationpath, change "tesseractPath" defined in the configfile "clipboardForce.ini".  
+You may set your preferred languages "lang=" too (default is lang="eng+deu+chi_sim+rus").  
   
 Possibly other (newer) versions:  
 [Index of /tesseract {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/)  
 
 Tesseract usage documentation:  
 [Tesseract docs](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html)  
+  
+Tesseract config "lang=" parameter documentation:  
+[Tesseract LANGUAGES](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#LANGUAGES)  
   
 Hints:  
 * If using [editorconfig](http://editorconfig.org) editorconfig replaces "TAB" character by spaces,  
