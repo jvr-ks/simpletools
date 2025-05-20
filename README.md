@@ -101,11 +101,21 @@ The file "clipToKeys_demodataANSI.txt" (ANSI encoded) contains all ANSI characte
 The file "clipToKeys_demodataUTF8.txt" (UTF-8 encoded) contains some demo characters.  
 The file "clipToKeys_demodataUTF16.txt" (UTF-16 LE BOM encoded) contains some demo characters.  
 Test-target-files: "clipToKeys_playgroundANSI.txt" etc.  
+(Filenames are from the old clipToKeys.exe)  
   
+[Download clipboardForce.exe](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.exe)  
+  
+Use "save to clipboardForce.ini":  
+[Download configuration file clipboardForce.ini](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.ini)  
+
 Uses Tesseract for Windows now, install it from:  
-[https://digi.bib.uni-mannheim.de/tesseract/](https://digi.bib.uni-mannheim.de/tesseract/)  
-to the tesseractPath defined in the configfile.  
+[Download tesseract v5.0.1.20220118 {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.1.20220118.exe)  
+copy to tesseractPath defined in the configfile "clipboardForce.ini".  
   
+Possibly other (newer) versions:  
+[Index of /tesseract {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/)  
+
+Tesseract usage documentation:  
 [Tesseract docs](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html)  
   
 Hints:  
@@ -113,10 +123,7 @@ Hints:
 according to the configuration, with CTRL + V it is not like that!  
 * UTF-8/UTF-16: Some additional erroneous characters may be appended after the last line.
   
-[Download clipboardForce.exe](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.exe)  
-[Download configuration file clipboardForce.ini](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.ini)  
-[Download tesseract v5.0.1.20220118 {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.1.20220118.exe)  
-[Index of /tesseract {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/)  
+
   
 #### <a name="cmdprompt">cmdprompt</a><a href="#overview"> &uarr;</a>
 Opens a commandprompt in the current folder.  
