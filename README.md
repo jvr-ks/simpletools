@@ -32,6 +32,7 @@ AhkVersionInfo | 1.00 | Shows installed Autohotkey 1 and 2 version numbers [Down
 ### Latest changes  
 Name | Modification / Issue
 ------------ | -------------  
+ClipToKeys | ClipToKeys replaced by [clipboardForce](https://github.com/jvr-ks/simpletools?tab=readme-ov-file#clipboardForce)
 pwEnterService | Move to a project of its own! [pwEnterService](https://github.com/jvr-ks/pwEnterService)
 chunkCopy | Move to a project of its own! [chunkCopy](https://github.com/jvr-ks/chunkCopy)
 translateViaGoogle2 | text selection mechanism changed
@@ -113,6 +114,9 @@ according to the configuration, with CTRL + V it is not like that!
 * UTF-8/UTF-16: Some additional erroneous characters may be appended after the last line.
   
 [Download clipboardForce.exe](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.exe)  
+[Download configuration file clipboardForce.ini](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.ini)  
+[Download tesseract v5.0.1.20220118 {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.1.20220118.exe)  
+[Index of /tesseract {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/)  
   
 #### <a name="cmdprompt">cmdprompt</a><a href="#overview"> &uarr;</a>
 Opens a commandprompt in the current folder.  
