@@ -69,12 +69,12 @@ SetWorkingDir %A_ScriptDir%
 wrkDir := A_ScriptDir . "\"
 
 appName := "clipboardForce"
-appVersion := "0.001"
+appVersion := "0.002"
 app := appName . " " . appVersion
 
 configFile := A_ScriptDir . "\ocr.ini"
 
-gdiToken := ""
+gdiToken := 0
 cursorChanged := 0
 
 x1 := 0
@@ -170,13 +170,14 @@ ocr(){
   thePen := Gdip_CreatePen(0xffff0000, 3)
 
   mouseGetPos, x1, y1
-  tooltipText := "Release [ALT] key or press [ESCAPE]!"
+  tooltipText := "Release [y] key or press [ESCAPE] to kill the app!"
   if (debug)
-    tooltipText := "Release [ALT] key or press [ESCAPE] (Mem: " . GetProcessMemoryUsage() . " MB)"
+    tooltipText := "Release [y] key or press [ESCAPE] to kill the app! (Mem: " . GetProcessMemoryUsage() . " MB)"
     
   tooltip, %tooltipText%, x1 + 50, y1 - 50, 2
     
   keywait, y
+  tooltip,,,, 2
   settimer, ocrLoop, -10
   
   return
@@ -200,9 +201,9 @@ ocrLoop(){
     Gdip_FillRoundedRectangle(theGraphics, theBrush, theImgx, theImgy, theWidth, theHeight, 2)
     UpdateLayeredWindow(overlayHWND, theHdc, 0, 0, A_ScreenWidth, A_ScreenHeight)
     
-    tooltipText := "Release [ALT] key or press [ESCAPE]!"
+    tooltipText := "Select the area with a mouse movement,`nthen release the [ALT] key!`n(No mouse dragging or clicking!)"
     if (debug)
-      tooltipText := "Release [ALT] key or press [ESCAPE] (Mem: " . GetProcessMemoryUsage() . " MB)"
+      tooltipText := tooltipText .  "(Mem: " . GetProcessMemoryUsage() . " MB)"
       
     tooltip, %tooltipText%, x2 + 50, y2 - 50, 2
     settimer, ocrLoop, -10
