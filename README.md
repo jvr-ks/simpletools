@@ -112,7 +112,7 @@ Hints:
 according to the configuration, with CTRL + V it is not like that!  
 * UTF-8/UTF-16: Some additional erroneous characters may be appended after the last line.
   
-[Download clipToKeys.exe](https://github.com/jvr-ks/simpletools/raw/main/clipToKeys.exe)  
+[Download clipboardForce.exe](https://github.com/jvr-ks/simpletools/raw/main/clipboardForce.exe)  
   
 #### <a name="cmdprompt">cmdprompt</a><a href="#overview"> &uarr;</a>
 Opens a commandprompt in the current folder.  
