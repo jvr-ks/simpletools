@@ -69,7 +69,7 @@ SetWorkingDir %A_ScriptDir%
 wrkDir := A_ScriptDir . "\"
 
 appName := "clipboardForce"
-appVersion := "0.004"
+appVersion := "1.05"
 app := appName . " " . appVersion
 
 configFile := A_ScriptDir . "\clipboardForce.ini"
