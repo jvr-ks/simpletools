@@ -113,6 +113,9 @@ Use "save to clipboardForce.ini":
 Uses Tesseract for Windows now, download installer:  
 [Download tesseract v5.3.0.20221214 {uni-mannheim}](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.3.0.20221214.exe)  
 [Download other/newer versions](https://digi.bib.uni-mannheim.de/tesseract/)  
+[Tesseract User Manual](https://tesseract-ocr.github.io/tessdoc/)  
+[Tesseract User Manual{for old versions}](https://github.com/tesseract-ocr/tessdoc)  
+  
 If not using the default installation path, change "tesseractPath" defined in the configfile "clipboardForce.ini".  
 You may set your preferred languages "lang=" too (default is lang="eng+deu+chi_sim+rus").  
   
