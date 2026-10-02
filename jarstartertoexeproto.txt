@@ -1,0 +1,58 @@
+﻿/*
+ *********************************************************************************
+ * 
+ * jarstartertoexe.ahk
+ * 
+ * Version: no versioning
+ * 
+ * Copyright (c) 2026 jvr.de. All rights reserved.
+ *
+ * Fileencodings: "AutohotkeyHelp2.ahk" UTF-8-BOM
+ *
+ *********************************************************************************
+*/
+/*
+ *********************************************************************************
+ * 
+ * GNU GENERAL PUBLIC LICENSE
+ * 
+ * A copy is included in the file "license.txt"
+ *
+  *********************************************************************************
+*/
+
+
+#Requires AutoHotkey >=2.0
+
+; Prototype, used to generate THEAPPNAME.exe
+
+#Warn
+#SingleInstance
+
+hasParams := A_Args.Length
+
+Switch hasParams
+{
+Case 0:
+  ; path to java.exe:
+  javaExe := EnvGet("JAVA_HOME") . "\bin\java.exe"
+  if (javaExe){
+    run A_ComSpec ' /c ' javaExe  ' -jar THEAPPNAME'
+  } else {
+    run A_ComSpec ' /c java.exe -jar THEAPPNAME'
+  }
+    
+Case 1:
+    javaExe := A_Args[1]
+    run A_ComSpec ' /c ' javaExe ' -jar THEAPPNAME'
+Default:
+    MsgBox "ERROR, please add the filename of the jar file as the first argument`n(optional: path to java.exe as the 2nd argument)."
+}
+
+exitApp
+
+;----------------------------------------------------------------------------
+
+
+
+
